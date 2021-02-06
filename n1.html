@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atspėk skaičių</title>
+</head>
+<style>
+    html {
+        font-family: monospace;
+    }
+
+    body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 400px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;">Žaidimas atspėk skaičių</h1>
+    <ul>
+
+        <li> Kompiuteris turi sugalvoti skaičių pagal vartotojo pasirinktą lygį (1-as [1-9], 2-as [1-100], trečias
+            [1-1000]);</li>
+        <li>Spėliojant kompiuteris turi sufleruoti į kurią pusę nuo teisingo atsakymo yra spėjimas;</li>
+        <li>Spėjimai registruojami (rodomi) puslapyje sufleravimą išskiriant spalva;</li>
+        <li>Baigus spėlioti turi parodyti per kiek ėjimų buvo atspėta, koks yra lygio rekordas ir leisti rinktis lygį iš
+            naujo.</li>
+        <li>Turi 10 spėjimų.</li>
+    </ul>
+
+    <div>
+        <label>Pasirink lygį:</label>
+        <input type="text" class="lygioskaicius">
+        <input type="submit" value="Pasirinkti" class="lygis">
+        <input style="float: right;" type="submit" value="Spėti" class="speti">
+        <input style="float: right;" type="text" id="spejimolaukas" class="spejimolaukas">
+        <label style="float: right;" for="spejimolaukas">Spėk skaičių: </label>
+    </div>
+
+    <div class="result">
+        <p class="lygiopasirinkimas"></p>
+        <p class="spejimai"></p>
+        <p class="paskutinisRezultatas"></p>
+        <p class="lowOrHi"></p>
+        <p class="perKiek"></p>
+    </div>
+    <br>
+    <div>
+        <p id="lygiorekordas1"></p>
+        <p id="lygiorekordas2"></p>
+        <p id="lygiorekordas3"></p>
+    </div>
+
+    <script src="sk.js">
+    </script>
+
+</body>
+
+</html>
